@@ -35,6 +35,8 @@ The project uses:
 ## 📈 Results
 The optimization models generated several possible schedules for a one-day visit to Disneyland Magic Kingdom. After comparing different objectives—such as maximizing attractions visited, minimizing waiting times, and reducing travel time—the most reasonable playing schedule was the one generated in **Section 3.3**, which focuses on **minimizing travel time**.
 
+![Optimized Schedule - Minimizing Travel Time](images/minTravel.png)
+
 ### Key Outcomes:
 1. **Efficient Timing**: This schedule avoids extremely early arrivals (e.g., 7:30 AM) and allows for a reasonable departure time around 10:00 PM.
 2. **Comprehensive Experience**: All rides and attractions are included in the schedule, ensuring a fulfilling visit.
