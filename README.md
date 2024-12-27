@@ -32,21 +32,68 @@ The project uses:
 
 ---
 
-## 📈 Results
-The optimization models generated several possible schedules for a one-day visit to Disneyland Magic Kingdom. After comparing different objectives—such as maximizing attractions visited, minimizing waiting times, and reducing travel time—the most reasonable playing schedule was the one generated in **Section 3.3**, which focuses on **minimizing travel time**.
+## 📦 Requirements
 
-![Optimized Schedule - Minimizing Travel Time](images/minTravel.png)
+To run this project, you need the following Python packages and tools installed:
+
+### Python Packages
+Install the required packages using the following command:
+```
+pip install -r requirements.txt
+```
+
+### Additional Setup
+1. Install the GAMSpy library. Refer to the [GAMSpy documentation](https://gamspy.readthedocs.io/en/latest/) for instructions.
+
+2. Install the [Gurobi Solver](https://www.gurobi.com/downloads/). Ensure you have a valid license.
+```
+gamspy install solver gurobi
+```
+
+---
+
+## 📈 Results
+The optimization models generated several possible schedules for a one-day visit to Disneyland Magic Kingdom, each focusing on different objectives:
+
+### **1. Maximizing the Number of Rides Played**
+![Optimized Schedule - Maximizing Played Rides](images/maxRideMap.png)
+
+This schedule prioritizes visiting as many attractions as possible within the day, sacrificing some efficiency in terms of walking and waiting times.
+
+---
+
+### **2. Minimizing the End Time**
+![Optimized Schedule - Minimizing End Time](images/minTimeMap.png)
+
+This schedule is designed to ensure that the day ends as early as possible while still covering key attractions, ideal for those who prefer shorter days.
+
+---
+
+### **3. Maximizing the Start Time**
+![Optimized Schedule - Maximizing Start Time](images/maxStartMap.png)
+
+This schedule delays the start of the day to a more reasonable hour, focusing on attractions available later in the day.
+
+---
+
+### **4. Minimizing Travel Time**
+![Optimized Schedule - Minimizing Travel Time](images/minTravelMap.png)
+
+After comparing these objectives, the most reasonable playing schedule was the one generated in **Section 3.3**, which focuses on **minimizing travel time**. This approach balances visiting all attractions, managing reasonable arrival and departure times, and reducing unnecessary walking.
+
+---
 
 ### Key Outcomes:
-1. **Efficient Timing**: This schedule avoids extremely early arrivals (e.g., 7:30 AM) and allows for a reasonable departure time around 10:00 PM.
-2. **Comprehensive Experience**: All rides and attractions are included in the schedule, ensuring a fulfilling visit.
-3. **Minimized Walking**: By prioritizing travel time, unnecessary back-and-forth walking between rides is avoided, making the experience more enjoyable and less exhausting.
+1. **Efficient Timing**: The travel time-focused schedule avoids extremely early arrivals (e.g., 7:30 AM) and allows for a reasonable departure time around 10:00 PM.
+2. **Comprehensive Experience**: All rides and attractions are included, ensuring a fulfilling and enjoyable visit.
+3. **Minimized Walking**: By reducing back-and-forth movement between rides, the schedule provides a less tiring experience.
 
-This optimized itinerary highlights how thoughtful planning can significantly enhance a visit to a theme park, balancing efficiency and enjoyment.
+This optimized itinerary demonstrates the value of thoughtful planning in enhancing a one-day visit to Disneyland, balancing efficiency, and enjoyment. 
 
 ---
 
 ## 🚀 Usage
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/Disneyland-One-Day-Schedule.git
+   ```
+   git clone https://github.com/ysu24/Disneyland-One-Day-Schedule.git
+   ```
